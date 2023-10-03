@@ -1,0 +1,155 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@300;400&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  scroll-behavior:smooth;
+  font-family:Ubuntu, Poppins;
+}
+a{
+  text-decoration:none;
+  color:var(--white-color);
+}
+
+
+
+li{
+  list-style: none;
+}
+
+
+/* ===============variables================== */
+ :root{
+   /* ------------body color----------- */
+  --background-body-color:#683bff;
+  --button-body-color:#e30081;
+  --other-text-color:#4dd5ff;
+  --other-text-color-light:#e3f8ff;
+  /* --other-text-color:#008eed; */
+  --white-color:#fff;
+  
+   /*---------text size---------- */
+    --font-4:4rem;  
+    --font-3:3rem;  
+    --font-2-5:2.5rem;  
+    --font-2:2rem;  
+    --font-1-5:1.5rem;  
+    --font-1:1rem;  
+    --font-0-75:0.75rem;  
+    --font-0-5:0.5rem;
+    
+    /* -------------Margin-------------- */
+    --m-3:3rem;
+    --m-2:2rem;
+    --m-1:1rem;
+      
+    /* -------------Margin bottom-------------- */
+    --mb-3:3rem;
+    --mb-2:2rem;
+    --mb-1-5:1.5rem;
+    --mb-1:1rem;
+    --mb-0-75:0.75rem;
+    --mb-0-5:0.5rem;
+}
+
+
+/* ---------------home starts------------------ */
+.event_home{
+  width:100vw;
+  height:80vh;
+  background-color:rgb(106,106,255,0.6);
+  background-image:url('/assets/img/971.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-blend-mode:screen;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.home_inner_div{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  top:40%;
+  max-width:600px;
+  margin-left:10px;
+  color:white;
+}
+
+.home_inner_div h2{
+color:white;
+margin:1rem;
+font-size:var(--font-2-5);
+  }
+  
+.home_inner_div p{
+  font-size:var(--font-1);
+  margin-bottom:1rem;
+}
+  
+.event_register_button{
+  margin-top:1rem;
+}  
+  
+.event_register_button a{
+   background-color:var(--button-body-color);
+   padding:10px 20px;
+   font-size:var(--font-1-5);
+}
+
+.event_register_button a:hover{
+  background-color:#c90876;
+}
+
+
+
+
+.event_details_outer_box{
+  display:flex;
+  flex-wrap:wrap;
+  width:100vw;
+  height:100vh;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin:auto;
+}
+
+
+.event_details_inner_div{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  max-width:600px;
+}
+
+.event_poster_div{
+  background-color:#03d2bb;
+  width:200px;
+  height:220px;
+  border:2px solid pink;
+}
+.event_poster_div img{
+  
+}
+
+.event_info_div{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  color:#00afe5;
+}

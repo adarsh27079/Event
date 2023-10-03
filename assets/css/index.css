@@ -1,0 +1,859 @@
+/* Background colour:- #030729////#8447ff */
+/* buttons color:-#e30081  light-shade:_ #e3f8ff */
+/* other color-#4dd5ff */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@300;400&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  scroll-behavior:smooth;
+  font-family:Ubuntu, Poppins;
+}
+a{
+  text-decoration:none;
+  color:var(--white-color);
+}
+
+
+
+li{
+  list-style: none;
+}
+
+button{
+  margin:5px;
+  padding:10px 22px;
+  background-color:var(--button-body-color);
+  color:var(--white-color);
+  border-style: none;
+}
+button:hover{
+  background-color:#42bde3;
+  cursor:pointer;
+}
+/* ===============variables================== */
+ :root{
+   /* ------------body color----------- */
+  --background-body-color:#683bff;
+  --button-body-color:#e30081;
+  --other-text-color:#4dd5ff;
+  --other-text-color-light:#e3f8ff;
+  --black-text-color:black;
+  /* --other-text-color:#008eed; */
+  --white-color:#fff;
+  
+   /*---------text size---------- */
+    --font-4:4rem;  
+    --font-3:3rem;  
+    --font-2-5:2.5rem;  
+    --font-2:2rem;  
+    --font-1-5:1.5rem;  
+    --font-1:1rem;  
+    --font-0-75:0.75rem;  
+    --font-0-5:0.5rem;
+    
+    /* -------------Margin-------------- */
+    --m-3:3rem;
+    --m-2:2rem;
+    --m-1:1rem;
+      
+    /* -------------Margin bottom-------------- */
+    --mb-3:3rem;
+    --mb-2:2rem;
+    --mb-1-5:1.5rem;
+    --mb-1:1rem;
+    --mb-0-75:0.75rem;
+    --mb-0-5:0.5rem;
+}
+
+/* ===============Utility class=============== */
+.container{
+  max-width:95%;
+  margin-inline:auto;
+  justify-content: center;
+}
+
+.flex{
+  display:flex;
+  align-items:center;
+  text-align: center;
+}
+.flex-col{
+  display: flex;
+  flex-direction:column;
+  
+}
+
+
+
+/* ================Navbar================== */
+.header{
+  /* background-color:var(--background-body-color); */
+  color:var(--white-color);
+  position:fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  z-index:100;
+  padding:5px;
+}
+.header a{
+  color:var(--white-color);
+}
+.navbar{
+  padding:10px;
+  justify-content: space-between;
+}
+.navbar ul li a:hover{
+  border-bottom:2px solid var(--other-text-color);
+}
+.logo img{
+  width:30px;
+}
+.logo{
+  font-size:var(--font-1-5);
+  background-color:;
+}
+
+.nav_list li{
+  list-style:none;
+}
+
+.nav_list{
+  justify-content:end;
+  gap:30px;
+  background-color:;
+}
+.nav_item{
+  font-size:var(--font-1);
+}
+
+#toggle_menu_button{
+  display:none;
+}
+#d_n_toggle_icon:hover{
+  cursor:pointer;
+}
+
+/* =================Home css starts================= */
+.home{
+  padding:20px;
+  display:flex;
+  justify-content: space-between;
+  /* background-image:url('/assets/img/bg.jpg'); */
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-color:var(--background-body-color);
+  height:100vh;
+  position:relative;
+  overflow:hidden;
+}
+.wave{
+  position:absolute;
+  bottom:0;
+  left: 0;
+  width:100%;
+}
+
+.home_text_box{
+  margin:var(--m-3) var(--m-3);
+  margin-top:8rem;
+}
+
+.home_date{
+  font-size:var(--font-1-5);
+  color:var(--other-text-color);
+  margin-bottom:var(--mb-0-5);
+}
+.heading{
+  font-size:var(--font-4);
+  margin-bottom:var(--mb-0-5);
+  color:var(--white-color);
+}
+.home_discription_inner_div{
+  font-size:var(--font-1);
+  display:flex;
+  margin-bottom:var(--mb-0-5);
+  color:var(--white-color);
+}
+.home_year{
+  font-size:var(--font-4);
+  margin-left:var(--m-1);
+  color:var(--other-text-color);
+}
+
+.home_button{
+}
+.home_buttons a{
+  color:var(--white-color);
+}
+.detail_button a{
+  border:1px solid var(--white-color);
+  padding:10px 20px;
+  font-size:var(--font-1-5);
+  margin-top:20px;
+  margin-right:20px;
+}
+/* 
+.detail_button:hover{
+  background-color:#fff;
+} */
+.detail_button a:hover{
+  background-color:#fff;
+  color:var(--button-body-color);
+}
+
+.register_button a{
+   background-color:var(--button-body-color);
+   padding:10px 20px;
+   font-size:var(--font-1-5);
+}
+
+.register_button a:hover{
+  background-color:#c90876;
+}
+.main_image img{
+  width:600px;
+  opacity:0.9;
+}
+
+/* -------timer---------- */
+/* .countdown{
+  position:absolute;
+  display:flex;
+  justify-content:space-between;
+  justify-items:center;
+  width:400px;
+  padding:10px;
+  bottom:14%;
+  left:35%;
+  z-index:1000;
+}
+.countdown div{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+ font-size:1.2rem;
+  width:100px;
+  height:100px;
+  background-color:rgb(227,0,129,0.5);
+} */
+
+
+
+/* =================Home css ends================= */
+
+/* =================about US starts================== */
+.about_outer_box{
+  padding-top:var(--m-3);
+  padding-bottom:var(--mb-3);
+  position:relative;
+}
+.bgDecoreC{
+  position:absolute;
+  bottom:-5%;
+  left:0;
+}
+.bgDecoreC img{
+  width:520px;
+  opacity:0.8;
+}
+
+.about_inner_box{
+  display:flex;
+  justify-content:space-between;
+  font-family:Poppins;
+}
+.about_image{
+  width:420px;
+  height:420px;
+  border-radius:35% 40% 40% 45%;
+  overflow:hidden;
+  margin-inline:auto;
+  
+}
+.about_image img{
+  width:100%;
+  height:100%;
+}
+.about_image img:hover{
+  transform:scale(1.05);
+}
+
+.about_discription{
+  /* transform:translateY(20%); */
+  margin-inline:auto;
+  padding-top:var(--mb-3);
+}
+.about_discription h2{
+  font-size:var(--font-2);
+  margin-bottom:var(--mb-2);
+  color:var(--black-text-color);
+}
+.about_discription p{
+  color: var(--black-text-color);
+}
+
+.about_register_button{
+  margin-top:var(--m-2);
+}
+.about_register_button a{
+  background-color:var(--background-body-color);
+  padding:10px 20px;
+  font-size:var(--font-1-5);
+  max-width:10rem;
+  text-align:center;
+}
+
+.about_register_button a:hover{
+  background-color:#15141cfd;
+  color:var(--white-color);
+}
+/* =================about US ends================== */
+
+
+
+/* ======================Our Gallary starts======================= */
+.our-gallary-outer-box{
+  padding-top:8rem;
+  padding-bottom:3rem;
+  position:relative;
+  overflow:hidden;
+}
+
+.our-gallary-outer-box h2{
+  color:var(--black-text-color);
+}
+.bgDecore{
+  position:absolute;
+  left:-10%;
+  top:-10%;
+}
+.bgDecore img{
+  width:320px;
+  opacity:0.8;
+}
+
+.bgDecoreC2{
+  position:absolute;
+  right:-10%;
+}
+.bgDecoreC2 img{
+  width:650px;
+  
+}
+
+
+.our-gallary-outer-box h2{
+  text-align:center;
+  font-size:2rem;
+  margin-bottom:1rem;
+}
+
+.img-gallary-div{
+  display:grid;
+  gap:10px;
+  margin:0% auto;
+  grid-template-rows:repeat(2, 1fr);
+  grid-template-columns:repeat(3, 1fr);
+  overflow:hidden;
+  width:85%;
+  
+}
+
+.img-gallary-div img{
+  width:100%;
+  height:100%;
+}
+.img-gallary-div img:nth-child(1){
+  grid-column:3;
+  grid-row:1/3;
+}
+
+/* ======================Our Gallary ends======================= */
+
+/* ==================Events starts================== */
+.event_outer_box{
+  margin:2rem 0rem;
+  padding:1rem 0rem;
+  position:relative;
+}
+.event_outer_box h2{
+  color:var(--black-text-color);  
+}
+.bgDecore2{
+  position:absolute;
+  right:0%;
+  top: 0%;
+}
+.bgDecore2 img{
+  width:320px;
+  opacity:0.8;
+}
+.bgDecore3{
+  position:absolute;
+  left:-5%;
+  bottom:0;
+}
+.bgDecore3 img{
+  width:380px;
+  opacity:0.8;
+}
+
+.event_outer_box h2{
+  margin-top:5rem;
+  margin-bottom:1rem;
+}
+
+
+
+/* ==================Events ends================== */
+
+/* =================schedule starts=================== */
+.schedule-section{
+  background-image:url('/assets/img/fixedbg.jpg');
+  background-blend-mode:screen;
+  background-attachment:fixed;
+  background-color:rgb(80, 0, 202);
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:#fff;
+  position:relative;
+}
+
+.upper-wave{
+  position:absolute;
+  top:0;
+  width:100vw;
+  overflow:hidden;
+}
+.lower-wave{
+  position:absolute;
+  bottom:0;
+  width:100vw;
+  overflow:hidden;
+}
+
+.inner-content{
+margin-top:2rem;
+display: flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items: center;
+}
+.inner-content p{
+  font-size:var(--font-2);
+  text-align: center;
+  text-shadow:2px 2px 4px   black;
+}
+ #inner-content1{
+   font-size:var(--font-3);
+  color:var(--other-text-color);
+}
+#inner-content2{
+  font-size:var(--font-3);
+  color:var(--button-body-color);
+}
+ .schedule-outer-box{
+  margin-top:4rem ;
+  padding:10rem 0rem;
+}
+.banner_register_button{
+  margin-top:3rem;
+}
+.banner_register_button a{
+  background-color:var(--button-body-color);
+  padding:10px 20px;
+  font-size:var(--font-1);
+  max-width:10rem;
+  text-align:center;
+}
+.banner_register_button a:hover{
+  background-color:#15141cfd;
+}
+
+
+/* .schedule-inner-box{
+  display:flex;
+  justify-content:space-between;
+  padding:2rem 0rem;
+} 
+.schedule-inner-box div{
+  width:30%;
+  
+}
+
+
+.schedule-inner-box table, th,td{
+  border: 1px solid gray;
+  border-collapse: collapse;
+  background-color:;
+  padding:10px;
+  font-size:var(--font-0-75);
+  color:white;
+}
+
+.schedule-inner-box tr td:first-child{
+  color:#8447ff;
+}
+.schedule-inner-box  tr:first-child{
+  background-color:var(--button-body-color);
+  color:var(--white-color);
+}
+
+
+
+.schedule-tabe1{
+  
+}
+.schedule-tabe2{
+  
+}
+
+.schedule-tabe3{
+  
+} */
+
+/* =================schedule ends=================== */
+
+/* ======================sponsers starts======================= */
+.sponsers-outer-box{
+  margin-top:1rem;
+
+}
+.sponsers-outer-box h2{
+  color:var(--black-text-color);
+}
+
+.sponsers_inner_div{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+ 
+.sponsers_inner_div img{
+  width:20%;
+  height:120px;
+  margin:20px;
+  padding:20px;
+} 
+ 
+ /* ======================sponsers ends======================= */
+
+/* ================footer css===================== */
+.footer{
+  background-color:#5000CA;
+  color:var(--white-color);
+  padding:50px;
+}
+.footer_outer_box{
+  display:flex;
+  justify-content:space-between;
+  margin:var(--m-1) var(--m-3);
+}
+
+.footer div h2{
+  font-size:var(--font-1-5);
+}
+.contact_text{
+}
+.us_text{
+  color:var(--other-text-color);
+}
+
+.footer_inner_box i{
+  color:var(--other-text-color);
+  padding:5px;
+}
+
+.footer_inner_box li{
+  margin-bottom:15px;
+  color:var(--white-color);
+}
+
+
+
+/* ==========================ALL MEDIEA QUARY=========================== */
+@media screen and (max-width:800px){
+  body{
+  }
+  
+  /* ----------------css for navbar------------------ */
+  .nav_list{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position:absolute;
+    top:100%;
+    left:-100%;
+    background-color:var(--background-body-color);
+    border:1px solid black;
+    box-shadow:2px 2px 5px #212027fd;
+    padding:20px;
+    width:95%;
+    margin:2%;
+    border-radius:10px 10px 10px 10px;
+    transition:0.3s ease-in-out;
+  }
+  .nav_item{
+    font-size:1.3rem;
+    width:100%;
+    margin-top:0;
+  }
+  .nav_list.active{
+     left:0;
+  }
+  #toggle_menu_button{
+    display:block;
+  }
+  
+  /* ---------------css for home/hero section---------------- */
+  .home{
+    display:flex;
+    flex-direction:column;
+  }
+  
+  .main_image img{
+    width:450px;
+  
+  }
+  
+  /* ----------------about section------------------- */
+  
+  .about_inner_box{
+    flex-direction:column;
+    justify-content:center;
+  }
+  
+  .about_image{
+    width:80%;
+    height:300px;
+    margin-bottom:1.5rem;
+    
+  }
+  
+  /* -------------event------------------------- */
+  
+  
+ /* --------- schedule------------- */
+ .schedule-inner-box{
+   flex-direction:column;
+   padding:0.8rem 0rem;
+   justify-content:center;
+   align-items:center;
+
+ }
+ .schedule-inner-box div{
+   width:90%;
+ }
+ .schedule-inner-box table, th,td{
+   font-size:1.2rem;
+ }
+ .schedule-tabe2{
+   display:none;
+ }
+ .schedule-tabe3{
+   display:none;
+ }
+  /* -------------------our Gallary------------------- */
+  .img-gallary-div{
+    display:flex;
+    justify-content:center;
+  }
+  .img-gallary-div img{
+    width:40%;
+  }
+  
+  /* ------------------sponsers------------- */
+  .sponsers_inner_div img{
+    width:40%;
+  }
+  
+  
+  /* ------------------footer---------------- */
+  .footer_outer_box{
+    flex-direction:column;
+  }
+  
+  .footer_inner_box form button{
+    margin-bottom:30px;
+  }
+}
+
+@media screen and (max-width:450px){
+  body{
+    /* background-color:red; */
+  }
+  
+  /* ---------------css for home/hero section---------------- */
+  .home{
+    justify-content:center;
+    align-items:center;
+  }
+  
+
+
+.home_date{
+  font-size:var(--font-1);
+}
+.heading{
+  font-size:var(--font-2-5);
+}
+.home_discription_inner_div{
+  font-size:var(--font-1);
+}
+.home_year{
+  font-size:var(--font-2-5);
+}  
+.home_buttons span a{
+  font-size:var(--font-1);
+}
+  
+  /* ----------------about section------------------- */
+  
+  .about_inner_box{
+    flex-direction:column;
+    justify-content:center;
+  }
+  
+  .bgDecoreC{
+  position:absolute;
+  top:5%;
+  left:0;
+}
+.bgDecoreC img{
+  width:420px;
+}
+  .about_image{
+  max-width:95%;
+  margin-inline:auto;
+  }
+  .about_discription{
+    max-width:90%;
+    margin-inline:auto;
+  }
+  /* -------------------our Gallary------------------- */
+.img-gallary-div{
+  margin:0px 2%;
+  display:grid;
+  gap:10px;
+  grid-template-rows:repeat(3,1fr);
+  grid-template-columns:repeat(2,1fr);
+  margin:0% auto;
+  
+ }
+ 
+ .bgDecore{
+  left:-18%;
+  top:-10%;
+}
+.bgDecore img{
+  width:250px;
+  opacity:0.8;
+}
+.bgDecoreC2{
+  right:-10%;
+  bottom:0;
+}
+.bgDecoreC2 img{
+  width:480px;
+  
+}
+
+.img-gallary-div img{
+  width:100%;
+  height:100%;
+ }
+ .img-gallary-div img:nth-child(1){
+  grid-row:1/3;
+  grid-column:1;
+ }
+  /* -------------event------------------------- */
+  .event_outer_box{
+  margin:2rem 1.5rem;
+  padding:1rem 0rem;
+}
+
+.swiper-wrapper div a{
+  max-width:450px;
+}
+
+  .swiper-slide{
+  }
+  
+  .bgDecore2{
+  right:-5%;
+  top:-4%;
+}
+.bgDecore2 img{
+  width:250px;
+}
+.bgDecore3{
+  position:absolute;
+  left:-15%;
+  bottom:-8%;
+}
+.bgDecore3 img{
+  width:280px;
+}
+  
+ /* --------- schedule------------- */
+ 
+
+ .schedule-inner-box table, th,td{
+   font-size:1.1rem;
+ }
+ .schedule-tabe2{
+   display:none;
+ }
+ .schedule-tabe3{
+   display:none;
+ }
+  
+  /* ------------------sponsers------------- */
+  .sponsers-outer-box{
+    padding:0.75rem;
+  }
+  .sponsers_inner_div{
+  }
+  .sponsers_inner_div img{
+   max-width:150px;
+  }
+  
+  
+  /* ------------------footer---------------- */
+  .footer_outer_box{
+    flex-direction:column;
+    margin:1rem 0rem;
+    max-width:350px;
+  }
+  
+  .footer_inner_box{
+    margin:1rem 0rem;
+  }
+  
+  .footer_inner_box form button{
+    margin-bottom:30px;
+  }
+  
+  
+  
+  
+  
+  
+  
+}
+
+
+
+
+
+
+
+
