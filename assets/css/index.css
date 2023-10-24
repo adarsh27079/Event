@@ -818,12 +818,12 @@ align-items: center;
   
   /* ------------------sponsers------------- */
   .sponsers-outer-box{
-    padding:0.75rem;
+    padding:0.5rem;
   }
   .sponsers_inner_div{
   }
   .sponsers_inner_div img{
-   width:120px;
+   max-width:130px;
   }
   
   
